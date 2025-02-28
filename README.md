@@ -26,7 +26,6 @@ To effectively use this repository, familiarity with the following concepts and 
 - ML, Deep Learning, and LLM frameworks such as TensorFlow, PyTorch, Llama.cpp, vLLM, and TensorRT-LLM
 
 ## Progress Tracking
-A status table tracks progress on different components. It is automatically updated via a GitHub Action when tasks are completed.
 
 | Task | Status |
 |------|--------|
