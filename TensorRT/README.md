@@ -289,6 +289,12 @@ Result:
 
 ![Result will be show](images/output_benchmark.png)
 
+## Interageting with Triton
+
+Triton provides a client to interact with Triton. You can use it to test your model.
+
+Install triton client: ```pip install tritonclient[all]```
+
 ## Others 
 
 We will have some models containing so many steps such as LLM or TT2. They are set of some models wrapping into a end-to-end model. 
