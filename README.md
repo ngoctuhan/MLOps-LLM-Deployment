@@ -36,39 +36,14 @@ A status table tracks progress on different components. It is automatically upda
 | Deploy Deep Learning model as API | ❌ |
 | Deploy LLM as API | ❌ |
 | Convert model to GGUF | ❌ |
-| Setup Llama.cpp | ❌ |
+| Deploy Llama.cpp for GGUF | ✅ |
+| Deploy TensorRT + Triton Serving | ✅ |
 | Deploy vLLM | ❌ |
 | Optimize with TensorRT-LLM | ❌ |
 
 ## Automating Status Updates
 A GitHub Action updates this README when a task is completed. The workflow checks for commits referencing task completion and modifies the table accordingly.
 
-### Example Workflow (GitHub Action)
-```yaml
-name: Update Task Status
-on:
-  push:
-    branches:
-      - main
-jobs:
-  update-status:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Update README
-        run: |
-          sed -i 's/| Setup DVC & MLflow | ❌ |/| Setup DVC & MLflow | ✅ |/' README.md
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add README.md
-          git commit -m "Update task status"
-          git push
-```
 
 ## Usage
 1. Clone the repository: `git clone https://github.com/your-username/MLOps-Deployment.git`
